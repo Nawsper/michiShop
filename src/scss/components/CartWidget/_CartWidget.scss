@@ -1,0 +1,13 @@
+.div__carrito {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .icono__carrito {
+    font-size: 30px;
+  }
+  span {
+    font-size: 30px;
+    margin: 20px;
+  }
+}

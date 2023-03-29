@@ -1,0 +1,44 @@
+.header {
+  background-color: #a9def9;
+}
+
+.header__logo {
+  max-width: 200px;
+}
+
+.header__div {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__h1 {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__ul--li {
+  font-size: 35px;
+  font-weight: 700;
+}
