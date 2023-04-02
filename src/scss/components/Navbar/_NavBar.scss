@@ -1,44 +1,64 @@
 .header {
-  background-color: #a9def9;
+  background-color: #000000;
+
+  &__div {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    &--div {
+      display: flex;
+      justify-content: space-between;
+
+      &__logo {
+        max-width: 15rem;
+      }
+
+      &__h1 {
+        font-weight: 700;
+        font-size: 5rem;
+        align-self: center;
+        color: #e4c1f9;
+      }
+    }
+
+    &--menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--li {
+          font-size: 2.7rem;
+          font-weight: 400;
+          padding: 3rem;
+        }
+      }
+    }
+  }
 }
 
-.header__logo {
-  max-width: 200px;
+.inicio {
+  color: #d3f8e2;
 }
 
-.header__div {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 30px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.nosotros {
+  color: #f694c1;
 }
 
-.header__h1 {
-  font-weight: 700;
-  font-size: 42px;
+.productos {
+  color: #ede7b1;
 }
 
-.header__nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
-.nav__ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav__ul--li {
-  font-size: 35px;
-  font-weight: 700;
+.contacto {
+  color: #a9def9;
 }

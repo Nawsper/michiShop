@@ -3,8 +3,8 @@ import "../../scss/components/CartWidget/_CartWidget.scss";
 
 export const CartWidget = () => {
   return (
-    <div className="div__carrito">
-      <FaOpencart className="icono__carrito" />
+    <div className="carrito">
+      <FaOpencart className="carrito__icono" />
       <span>0</span>
     </div>
   );
