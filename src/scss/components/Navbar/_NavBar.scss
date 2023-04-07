@@ -1,8 +1,10 @@
+@import "../variables";
+
 .header {
-  background-color: #000000;
+  background-color: $fontDark;
 
   &__div {
-    background-color: #000000;
+    background-color: $fontDark;
     display: flex;
     justify-content: center;
   }
@@ -23,7 +25,7 @@
         font-weight: 700;
         font-size: 5rem;
         align-self: center;
-        color: #e4c1f9;
+        color: $bgColor2;
       }
     }
 
@@ -48,17 +50,17 @@
 }
 
 .inicio {
-  color: #d3f8e2;
+  color: $bgColor1;
 }
 
 .nosotros {
-  color: #f694c1;
+  color: $bgColor3;
 }
 
 .productos {
-  color: #ede7b1;
+  color: $bgColor4;
 }
 
 .contacto {
-  color: #a9def9;
+  color: $bgColor5;
 }
