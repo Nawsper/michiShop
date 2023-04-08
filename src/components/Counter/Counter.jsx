@@ -11,7 +11,7 @@ export const Counter = ({ initial, stock, addCart }) => {
   };
 
   const rest = () => {
-    if (amount > 1) {
+    if (amount > 0) {
       setAmount(amount - 1);
     }
   };
