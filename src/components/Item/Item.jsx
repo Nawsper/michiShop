@@ -1,10 +1,13 @@
-export const Item = ({ product }) => {
+import "../../scss/components/Item/_Item.scss";
+
+export const Item = ({ product: { image, title, price, stock } }) => {
   return (
-    <div>
-      <img src={product.image} alt={product.title} />
-      <h5>{product.title}</h5>
-      <p>{product.price}</p>
-      <button>Ver detalles</button>
+    <div className="card">
+      <img className="card__img" src={image} alt={title} />
+      <h5 className="card__h5">{title}</h5>
+      <p className="card__price">{price}</p>
+      <p className="card__stock">Stock disponible: {stock}</p>
+      <button className="card__button">Ver detalles</button>
     </div>
   );
 };

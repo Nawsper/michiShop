@@ -1,0 +1,46 @@
+@import "../variables";
+
+.card {
+  margin: 1rem;
+  width: 300px;
+  max-width: 300px;
+  padding: 1rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+
+  &__h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    color: $fontDark;
+    font-weight: 400;
+  }
+
+  &__price {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    color: $fontDark;
+    font-weight: 100;
+  }
+
+  &__stock {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: $fontDark;
+    font-weight: 100;
+  }
+
+  &__button {
+    margin-top: 2%;
+    padding: 2%;
+    text-decoration: none;
+    background-color: $bgColor5;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255, 0.5);
+
+    &:hover {
+      background-color: $bgColor4;
+      opacity: 0.5;
+    }
+  }
+}

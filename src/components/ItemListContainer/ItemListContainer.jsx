@@ -17,10 +17,12 @@ export const ItemListContainer = ({ greeting }) => {
   }, []);
 
   return (
-    <div className="container">
-      <h2 className="list__h2">MichiProductos</h2>
-      <p>{greeting}</p>
-      <ItemList products={products} />
+    <div className="itemListContainer">
+      <h2 className="itemListContainer__h2">MichiProductos</h2>
+      <p className="itemListContainer__p">{greeting}</p>
+      <div className="itemListContainer__div">
+        <ItemList products={products} />
+      </div>
     </div>
   );
 };
