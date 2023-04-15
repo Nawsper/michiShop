@@ -7,7 +7,7 @@ export const NavBar = () => {
       <div className="header__div">
         <img
           className="header__div--presentacion"
-          src="./img/presentacion.png"
+          src="/img/presentacion.png"
           alt="bigotes gato"
         />
       </div>
@@ -15,7 +15,7 @@ export const NavBar = () => {
         <div className="header__nav--div">
           <img
             className="header__nav--div__logo"
-            src="./img/logo.png"
+            src="/img/logo.png"
             alt="logo"
           />
           <h1 className="header__nav--div__h1">Michi Shop</h1>

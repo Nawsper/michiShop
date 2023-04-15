@@ -28,19 +28,18 @@
     font-size: 1rem;
     color: $fontDark;
     font-weight: 100;
+    margin: 5%;
   }
 
   &__button {
-    margin-top: 2%;
     padding: 2%;
     text-decoration: none;
     background-color: $bgColor5;
     border-radius: 10px;
-    border-color: rgb(255, 255, 255, 0.5);
+    font-size: 1.3rem;
 
     &:hover {
       background-color: $bgColor4;
-      opacity: 0.5;
     }
   }
 }
