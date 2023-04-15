@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../../scss/components/ItemListContainer/_ItemListContainer.scss";
-import callProducts from "../callProducts.js";
+import { callProducts } from "../callProducts.js";
 import { ItemList } from "../ItemList/ItemList";
 
 export const ItemListContainer = ({ greeting }) => {
