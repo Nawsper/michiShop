@@ -1,20 +1,25 @@
 import { useEffect, useState } from "react";
 import "../../scss/components/ItemListContainer/_ItemListContainer.scss";
-import { callProducts } from "../callProducts.js";
+import { callProducts, callProductsByCategory } from "../callProducts.js";
 import { ItemList } from "../ItemList/ItemList";
+import { useParams } from "react-router-dom";
 
 export const ItemListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([]);
 
+  const { categoryId } = useParams();
+
   useEffect(() => {
-    callProducts()
+    const callFunc = categoryId ? callProductsByCategory : callProducts;
+
+    callFunc(categoryId)
       .then((res) => {
         setProducts(res);
       })
       .catch((error) => {
         console.error(error);
       });
-  }, []);
+  }, [categoryId]);
 
   return (
     <div className="itemListContainer">

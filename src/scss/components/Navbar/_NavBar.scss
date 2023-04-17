@@ -13,13 +13,11 @@
   &__nav {
     display: flex;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 1;
 
     &--div {
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       &__logo {
         max-width: 15rem;
@@ -63,6 +61,7 @@
 
 .productos {
   color: $bgColor4;
+  cursor: pointer;
 }
 
 .contacto {

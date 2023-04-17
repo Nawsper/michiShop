@@ -1,4 +1,3 @@
-import "../../scss/components/ItemDetailContainer/_ItemDetailContainer.scss";
 import { useState, useEffect } from "react";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { callProductsById } from "../callProducts";

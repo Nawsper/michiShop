@@ -11,3 +11,9 @@ export const callProductsById = (idProduct) => {
     resolve(allProducts.find((prod) => prod.id === idProduct));
   });
 };
+
+export const callProductsByCategory = (categoryProduct) => {
+  return new Promise((resolve) => {
+    resolve(allProducts.filter((prod) => prod.category === categoryProduct));
+  });
+};
