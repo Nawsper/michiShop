@@ -11,6 +11,14 @@
     font-size: 4rem;
   }
 
+  &__h4 {
+    color: $bgColor1;
+    font-family: "Roboto", sans-serif;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px #9b9898;
+  }
+
   &__p {
     color: $fontDark;
     font-family: "Roboto", sans-serif;

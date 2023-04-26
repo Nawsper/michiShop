@@ -1,0 +1,44 @@
+@import "../variables";
+
+.presentNos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 1rem;
+
+  &__img {
+    border-radius: 50px 0 50px 0;
+    padding: 2rem;
+    max-width: 40%;
+  }
+
+  &__container {
+    padding: 2rem;
+
+    &--h2 {
+      font-size: 6rem;
+      font-weight: 900;
+      text-transform: capitalize;
+      margin: 1rem;
+      padding: 1rem;
+      animation: nosTitle 15s infinite;
+    }
+
+    &--p {
+      font-size: 2rem;
+      margin: 1rem;
+      padding: 1rem;
+      color: $txColor3;
+      box-shadow: 2px 2px 2px 1px;
+      border-radius: 0 30px 0 30px;
+    }
+
+    @keyframes nosTitle {
+      50% {
+        color: $bgColor3;
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ export const Categorias = () => {
   return (
     <ul className="categorias">
       <div className="categorias__div todos">
-        <NavLink className="categorias__div--navlink" to={`/`}>
+        <NavLink className="categorias__div--navlink" to={`/productos`}>
           Todos
         </NavLink>
       </div>

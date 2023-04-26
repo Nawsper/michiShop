@@ -24,6 +24,7 @@ export const ItemListContainer = ({ greeting }) => {
   return (
     <div className="itemListContainer">
       <h2 className="itemListContainer__h2">MichiProductos</h2>
+      <h4 className="itemListContainer__h4">{categoryId}</h4>
       <p className="itemListContainer__p">{greeting}</p>
       <div className="itemListContainer__div">
         <ItemList products={products} />

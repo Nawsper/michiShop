@@ -36,10 +36,13 @@ export const NavBar = () => {
             <NavLink to={`/`} className="header__nav--menu__ul--li inicio">
               Inicio
             </NavLink>
-            <NavLink to={`/`} className="header__nav--menu__ul--li nosotros">
+            <NavLink
+              to={`/nosotros`}
+              className="header__nav--menu__ul--li nosotros"
+            >
               Nosotros
             </NavLink>
-            <p
+            <button
               className={`header__nav--menu__ul--li productos ${
                 showSubmenu ? "active" : ""
               }`}
@@ -47,7 +50,7 @@ export const NavBar = () => {
             >
               Productos
               {showSubmenu && <Categorias />}
-            </p>
+            </button>
             <NavLink to={`/`} className="header__nav--menu__ul--li contacto">
               Contacto
             </NavLink>

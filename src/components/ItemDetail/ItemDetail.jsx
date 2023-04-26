@@ -9,7 +9,7 @@ export const ItemDetail = ({ image, title, description, price, stock }) => {
         <h2 className="itemDetail__div--h2">{title}</h2>
         <h3 className="itemDetail__div--h3">{description}</h3>
         <h6 className="itemDetail__div--h6">{price}</h6>
-        <p className="itemDetail__div--p">{stock}</p>
+        <p className="itemDetail__div--p">Stock disponible: {stock}</p>
         <Counter
           initial={0}
           stock={stock}

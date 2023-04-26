@@ -1,0 +1,17 @@
+@import "../variables";
+
+.footer {
+  background-color: $fontDark;
+  color: $fontLight;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+
+  &__div {
+    &__h4 {
+      font-weight: 400;
+      font-size: 2rem;
+      align-self: center;
+      color: $bgColor2;
+    }
+  }
+}
