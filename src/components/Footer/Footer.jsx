@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__img">
-        <img src="/img/footer.jpg" alt="silueta gato durmiendo" />
+        <img src="/img/footer.png" alt="silueta gato durmiendo" />
       </div>
       <div className="footer__div">
         <h4 className="footer__div--h4">Seguinos en nuestras Redes Sociales</h4>
