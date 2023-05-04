@@ -91,6 +91,9 @@ Este proyecto fue creado de manera individual por Yasmin Lara Burrut para el cur
 
 Información de contacto:
 `Burrut Yasmin Lara`
+
 [Linkedin](https://www.linkedin.com/in/burrutyasmin/)
+
 [Github](https://github.com/Nawsper)
-[Gmail](nawsper@gmail.com)
+
+[nawsper@gmail.com]
