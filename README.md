@@ -90,10 +90,11 @@ Este proyecto fue creado de manera individual por Yasmin Lara Burrut para el cur
 ## Contacto
 
 Información de contacto:
+
 `Burrut Yasmin Lara`
 
 [Linkedin](https://www.linkedin.com/in/burrutyasmin/)
 
 [Github](https://github.com/Nawsper)
 
-[nawsper@gmail.com]
+nawsper@gmail.com
