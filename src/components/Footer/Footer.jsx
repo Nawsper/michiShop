@@ -13,7 +13,7 @@ export const Footer = () => {
         <FaFacebook className="footer__div--facebook" />
         <FaTwitter className="footer__div--twitter" />
       </div>
-      <p class="footer__p">&copy;2023 MichiShop by Nawsper</p>
+      <p className="footer__p">&copy;2023 MichiShop by Nawsper</p>
     </div>
   );
 };
