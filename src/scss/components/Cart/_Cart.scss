@@ -1,1 +1,69 @@
 @import "../variables";
+
+.carrito {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 3rem;
+
+  &__vacio {
+    padding: 3rem;
+    margin-bottom: 7rem;
+  }
+
+  &__optionProductos {
+    background-color: $bgColor5;
+    padding: 1.5%;
+    border-radius: 10px;
+    font-size: 2rem;
+    &:hover {
+      background-color: $bgColor4;
+    }
+  }
+}
+
+.carritoItems {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 3rem;
+
+  &__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--button {
+      align-self: flex-end;
+      color: $fontDark;
+      background-color: $bgColor5;
+      padding: 0.8%;
+      border-radius: 10px;
+      border: 3px solid $fontDark;
+      font-size: 1.5rem;
+    }
+
+    &--option {
+      padding: 1%;
+
+      &--total {
+        padding: 2rem;
+      }
+
+      &--link {
+        color: $fontDark;
+        background-color: $bgColor5;
+        padding: 3%;
+        border-radius: 10px;
+        border: 3px solid $fontDark;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

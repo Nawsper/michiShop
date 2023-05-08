@@ -9,24 +9,34 @@ export const Cart = () => {
 
   if (totalAmount === 0) {
     return (
-      <div>
-        <h1>Cart sin items</h1>
+      <div className="carrito">
+        <h1 className="carrito__vacio">El carrito está vacío</h1>
+        <Link to="/productos" className="carrito__optionProductos">
+          Productos
+        </Link>
       </div>
     );
   }
 
   return (
-    <div>
+    <div className="carritoItems">
       {cart.map((p) => (
         <CartItem key={p.id} {...p} />
       ))}
-      <h3>Total: ${total}</h3>
-      <button onClick={() => clearCart()} className="Button">
-        Limpiar carrito
-      </button>
-      <Link to="/checkout" className="option">
-        Checkout
-      </Link>
+      <div className="carritoItems__div">
+        <button
+          onClick={() => clearCart()}
+          className="carritoItems__div--button"
+        >
+          Limpiar carrito
+        </button>
+        <div className="carritoItems__div--option">
+          <h3 className="carritoItems__div--option--total">Total: ${total}</h3>
+          <Link to="/checkout" className="carritoItems__div--option--link">
+            Finalizar compra
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
