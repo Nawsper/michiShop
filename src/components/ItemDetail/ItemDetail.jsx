@@ -32,7 +32,7 @@ export const ItemDetail = ({ id, image, title, description, price, stock }) => {
         <p className="itemDetail__div--p">Stock disponible: {stock}</p>
 
         {amountAdded > 0 ? (
-          <div>
+          <div className="itemDetail__div--div">
             {inCart ? (
               <p className="itemDetail__div--amount">
                 Has seleccionado {amountAdded} producto/s
@@ -49,6 +49,11 @@ export const ItemDetail = ({ id, image, title, description, price, stock }) => {
         ) : (
           <Counter initial={0} stock={stock} addCart={handleAddCart} />
         )}
+        <div className="itemDetail__div--div">
+          <Link to="/productos" className="itemDetail__div--optionProductos">
+            Productos
+          </Link>
+        </div>
       </div>
     </div>
   );

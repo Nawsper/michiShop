@@ -20,6 +20,7 @@ export const Cart = () => {
 
   return (
     <div className="carritoItems">
+      <h2 className="carritoItems__titulo">Carrito</h2>
       {cart.map((p) => (
         <CartItem key={p.id} {...p} />
       ))}
@@ -30,6 +31,11 @@ export const Cart = () => {
         >
           Limpiar carrito
         </button>
+        <div className="carritoItems__div--div">
+          <Link to="/productos" className="carritoItems__div--optionProductos">
+            Productos
+          </Link>
+        </div>
         <div className="carritoItems__div--option">
           <h3 className="carritoItems__div--option--total">Total: ${total}</h3>
           <Link to="/checkout" className="carritoItems__div--option--link">

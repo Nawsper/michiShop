@@ -1,39 +1,35 @@
 import "../../scss/components/CartItem/_CartItem.scss";
-// import { CartContext } from "../../context/CartContext";
-import { useState } from "react";
+import { FaTrashAlt } from "react-icons/fa";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
-export const CartItem = ({ image, title, price }) => {
-  const [amountAdded, setAmountAdded] = useState(0);
+export const CartItem = ({ id, title, price, amount }) => {
+  const { removeItem } = useContext(CartContext);
 
   return (
-    <div>
-      <h2 classNameName="main__titulo">Carrito</h2>
-      <div className="main__carrito">
-        <div
-          id="main__carrito--productos"
-          className="main__carrito--productos disable"
-        >
-          <img className="carrito__prod--img" src={image} alt={title} />
-          <div class="carrito__prod--titulo">
-            <small>Título</small>
-            <h3>{title}</h3>
-          </div>
-          <div class="carrito__prod--cant">
-            <small>Cantidad</small>
-            <p>${amountAdded}</p>
-          </div>
-          <div class="carrito__prod--precio">
-            <small>Precio</small>
-            <p>${price}</p>
-          </div>
-          <div class="carrito__prod--subtotal">
-            <small>Subtotal</small>
-            <p>${price * amountAdded}</p>
-          </div>
-          <button class="carrito__prod--eliminar" id="${producto.id}">
-            <i class="bi bi-trash3"></i>
-          </button>
+    <div className="carrito">
+      <div id="carrito__productos" className="carrito__prod">
+        <div className="carrito__prod--titulo">
+          <h3>{title}</h3>
         </div>
+        <div className="carrito__prod--cant">
+          <small>Cantidad</small>
+          <p>{amount}</p>
+        </div>
+        <div className="carrito__prod--precio">
+          <small>Precio</small>
+          <p>${price}</p>
+        </div>
+        <div className="carrito__prod--subtotal">
+          <small>Subtotal</small>
+          <p>${price * amount}</p>
+        </div>
+        <button
+          className="carrito__prod--eliminar"
+          onClick={() => removeItem(id)}
+        >
+          <FaTrashAlt />
+        </button>
       </div>
     </div>
   );

@@ -48,6 +48,10 @@
       padding: 1rem;
     }
 
+    &--div {
+      margin: 6rem;
+    }
+
     &--amount {
       text-decoration: underline;
       color: $bgColor5;
@@ -65,9 +69,20 @@
       font-size: 1.5rem;
     }
 
-    @keyframes titulos {
-      50% {
-        color: $bgColor2;
+    &--optionProductos {
+      background-color: $bgColor5;
+      padding: 1.5%;
+      border-radius: 10px;
+      font-size: 2rem;
+
+      &:hover {
+        background-color: $bgColor4;
+      }
+
+      @keyframes titulos {
+        50% {
+          color: $bgColor2;
+        }
       }
     }
   }

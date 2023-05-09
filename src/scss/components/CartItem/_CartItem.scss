@@ -1,1 +1,21 @@
 @import "../variables";
+
+.carrito {
+  &__prod {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+
+    &--eliminar {
+      border: 0;
+      padding: 0.25rem;
+      border: var(--clrDark) solid 1px;
+      background-color: transparent;
+      color: #ff0000;
+      margin-left: 4rem;
+      cursor: pointer;
+    }
+  }
+}

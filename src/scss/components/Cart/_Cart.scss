@@ -34,6 +34,10 @@
   font-weight: 400;
   padding: 3rem;
 
+  &__titulo {
+    font-size: 3.5rem;
+  }
+
   &__div {
     display: flex;
     justify-content: space-between;
@@ -47,6 +51,19 @@
       border-radius: 10px;
       border: 3px solid $fontDark;
       font-size: 1.5rem;
+    }
+
+    &--div {
+      background-color: $bgColor5;
+      padding: 1.5%;
+      border-radius: 10px;
+      font-size: 2rem;
+      align-self: flex-end;
+      margin-left: 100px;
+
+      &:hover {
+        background-color: $bgColor4;
+      }
     }
 
     &--option {

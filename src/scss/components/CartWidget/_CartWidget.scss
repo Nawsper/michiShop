@@ -2,18 +2,22 @@
 
 .carrito {
   display: flex;
+  justify-content: center;
   align-items: center;
+  align-self: center;
   gap: 1rem;
   margin-right: 1rem;
   font-family: "Roboto", sans-serif;
 
-  &__icono {
-    font-size: 4rem;
-    color: $fontLight;
-  }
-  &__p {
-    font-size: 1.5rem;
-    margin: 1rem;
-    color: $fontLight;
+  &__link {
+    &--icono {
+      font-size: 4rem;
+      color: $fontLight;
+    }
+    &--p {
+      font-size: 1.5rem;
+      margin: 1rem;
+      color: $fontLight;
+    }
   }
 }

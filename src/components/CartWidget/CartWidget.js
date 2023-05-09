@@ -11,11 +11,11 @@ export const CartWidget = () => {
     <div className="carrito">
       <Link
         to="/cart"
-        className="cartWidget"
+        className="carrito__link"
         style={{ display: totalAmount > 0 ? "flex" : "none" }}
       >
-        <FaOpencart className="carrito__icono" />
-        <p className="carrito__p">{totalAmount}</p>
+        <FaOpencart className="carrito__link--icono" />
+        <p className="carrito__link--p">{totalAmount}</p>
       </Link>
     </div>
   );
