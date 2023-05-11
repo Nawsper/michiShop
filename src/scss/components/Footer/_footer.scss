@@ -20,16 +20,30 @@
 
     &--instagram {
       color: $bgColor3;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
     &--facebook {
       color: $bgColor2;
       margin-left: 1.5rem;
       margin-right: 1.5rem;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
     &--twitter {
       color: $bgColor5;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 }

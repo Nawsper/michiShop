@@ -16,6 +16,7 @@
       padding-right: 1%;
       border-radius: 10px;
       font-size: 2rem;
+      cursor: pointer;
     }
 
     &--amount {
@@ -30,6 +31,7 @@
       padding-right: 1%;
       border-radius: 10px;
       font-size: 2rem;
+      cursor: pointer;
     }
   }
 
@@ -39,6 +41,10 @@
       padding: 1%;
       border-radius: 10px;
       font-size: 1.5rem;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 }
