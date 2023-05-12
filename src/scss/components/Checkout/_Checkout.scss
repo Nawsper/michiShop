@@ -1,0 +1,13 @@
+@import "../variables";
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+
+  &__h1 {
+    font-size: 4rem;
+  }
+}
