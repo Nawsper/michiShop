@@ -9,6 +9,7 @@ import "./scss/main.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Cart } from "./components/Cart/Cart";
 import { Checkout } from "./components/Checkout/Checkout";
+import { Contacto } from "./components/Contacto/Contacto";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
               element={<ItemListContainer />}
             />
             <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+            <Route path="/contacto" element={<Contacto />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<h1>404 NOT FOUND</h1>} />

@@ -1,0 +1,191 @@
+@import "../variables";
+
+.contacto {
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+
+  &__h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    color: $fontDark;
+  }
+
+  &__p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: $fontDark;
+  }
+
+  &__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+    align-items: center;
+
+    &--img {
+      max-width: 20%;
+    }
+
+    &--seccion {
+      margin-top: 2rem;
+
+      &--mail {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+
+        &-icon {
+          font-size: 2rem;
+          margin-right: 1rem;
+          color: $bgColor2;
+        }
+
+        &-icon:hover {
+          color: $txColor2;
+        }
+
+        a {
+          color: $bgColor2;
+          text-decoration: none;
+          margin-left: 0.5rem;
+
+          &:hover {
+            color: $txColor2;
+          }
+        }
+      }
+      &--wtp {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+
+        &-icon {
+          font-size: 2rem;
+          margin-right: 1rem;
+          color: $bgColor1;
+        }
+
+        &-icon:hover {
+          color: #12e01c;
+        }
+
+        p {
+          color: $bgColor1;
+          text-decoration: none;
+          margin-left: 0.5rem;
+
+          &:hover {
+            color: #12e01c;
+          }
+        }
+      }
+      &--face {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+
+        &-icon {
+          font-size: 2rem;
+          margin-right: 1rem;
+          color: #90b5fa;
+        }
+
+        &-icon:hover {
+          color: #2825ff;
+        }
+
+        a {
+          color: #90b5fa;
+          text-decoration: none;
+          margin-left: 0.5rem;
+
+          &:hover {
+            color: #2825ff;
+          }
+        }
+      }
+      &--twt {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+
+        &-icon {
+          font-size: 2rem;
+          margin-right: 1rem;
+          color: $bgColor5;
+        }
+
+        &-icon:hover {
+          color: #0b92d1;
+        }
+
+        a {
+          color: $bgColor5;
+          text-decoration: none;
+          margin-left: 0.5rem;
+
+          &:hover {
+            color: #0b92d1;
+          }
+        }
+      }
+      &--insta {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+
+        &-icon {
+          font-size: 2rem;
+          margin-right: 1rem;
+          color: $bgColor3;
+        }
+
+        &-icon:hover {
+          color: $txColor3;
+        }
+
+        a {
+          color: $bgColor3;
+          text-decoration: none;
+          margin-left: 0.5rem;
+
+          &:hover {
+            color: $txColor3;
+          }
+        }
+      }
+      &--suc {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+
+        &-icon {
+          font-size: 2rem;
+          margin-right: 1rem;
+          color: $bgColor4;
+        }
+
+        &-icon:hover {
+          color: #fff127;
+        }
+
+        p {
+          color: $bgColor4;
+          text-decoration: none;
+          margin-left: 0.5rem;
+
+          &:hover {
+            color: #fff127;
+          }
+        }
+      }
+    }
+  }
+}

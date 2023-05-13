@@ -1,3 +1,4 @@
+import "../../scss/components/Checkout/_Checkout.scss";
 import { useContext } from "react";
 import { useState } from "react";
 import { db } from "../../config/firebase";
@@ -53,7 +54,7 @@ export const Checkout = () => {
         const stockDb = dataDoc.stock;
 
         const productAddedToCart = cart.find((prod) => prod.id === doc.id);
-        const prodQuantity = productAddedToCart?.quantity;
+        const prodQuantity = productAddedToCart?.amount;
 
         if (stockDb >= prodQuantity) {
           batch.update(doc.ref, { stock: stockDb - prodQuantity });

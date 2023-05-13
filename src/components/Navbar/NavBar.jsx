@@ -51,7 +51,10 @@ export const NavBar = () => {
               Productos
               {showSubmenu && <Categorias />}
             </button>
-            <NavLink to={`/`} className="header__nav--menu__ul--li contacto">
+            <NavLink
+              to={`/contacto`}
+              className="header__nav--menu__ul--li contacto"
+            >
               Contacto
             </NavLink>
           </ul>
