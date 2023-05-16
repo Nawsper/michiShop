@@ -4,37 +4,33 @@ import "../../scss/components/Categorias/_Categorias.scss";
 export const Categorias = () => {
   return (
     <ul className="categorias">
-      <div className="categorias__div todos">
-        <NavLink className="categorias__div--navlink" to={`/productos`}>
-          Todos
-        </NavLink>
-      </div>
-      <div className="categorias__div alimentos">
-        <NavLink
-          className="categorias__div--navlink"
-          to={`/category/alimentos`}
-        >
-          Alimentos
-        </NavLink>
-      </div>
-      <div className="categorias__div juguetes">
-        <NavLink className="categorias__div--navlink" to={`/category/juguetes`}>
-          Juguetes
-        </NavLink>
-      </div>
-      <div className="categorias__div descanso">
-        <NavLink className="categorias__div--navlink" to={`/category/descanso`}>
-          Descanso
-        </NavLink>
-      </div>
-      <div className="categorias__div vestimenta">
-        <NavLink
-          className="categorias__div--navlink"
-          to={`/category/vestimenta`}
-        >
-          Vestimenta
-        </NavLink>
-      </div>
+      <NavLink className="categorias__navlink todos" to={`/productos`}>
+        <div className="categorias__navlink--div">Todos</div>
+      </NavLink>
+      <NavLink
+        className="categorias__navlink  alimentos"
+        to={`/category/alimentos`}
+      >
+        <div className="categorias__navlink--div">Alimentos</div>
+      </NavLink>
+      <NavLink
+        className="categorias__navlink  juguetes"
+        to={`/category/juguetes`}
+      >
+        <div className="categorias__navlink--div">Juguetes</div>
+      </NavLink>
+      <NavLink
+        className="categorias__navlink  descanso"
+        to={`/category/descanso`}
+      >
+        <div className="categorias__navlink--div">Descanso</div>
+      </NavLink>
+      <NavLink
+        className="categorias__navlink vestimenta"
+        to={`/category/vestimenta`}
+      >
+        <div className="categorias__navlink--div">Vestimenta</div>
+      </NavLink>
     </ul>
   );
 };

@@ -4,19 +4,16 @@
   background-color: $fontDark;
   position: absolute;
 
-  &__div {
-    padding: 10px;
-    transition: background-color 0.3s ease;
-    top: auto;
-    width: 100%;
-
-    &:hover {
-      background-color: #76796b;
-    }
-
-    &--navlink {
+  &__navlink {
+    &--div {
+      padding: 15px;
       color: $bgColor4;
       font-weight: 100;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #76796b;
+      }
     }
   }
 }

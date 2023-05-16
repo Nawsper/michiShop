@@ -2,14 +2,32 @@ import "../../scss/components/Navbar/_NavBar.scss";
 import { CartWidget } from "../CartWidget/CartWidget";
 import { NavLink, Link } from "react-router-dom";
 import { Categorias } from "../Categorias/Categorias";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export const NavBar = () => {
   const [showSubmenu, setShowSubmenu] = useState(false);
+  const buttonRef = useRef(null);
 
   const handleSubmenu = () => {
     setShowSubmenu(!showSubmenu);
   };
+
+  const handleWindowClick = (event) => {
+    if (
+      !buttonRef.current.contains(event.target) &&
+      !event.target.classList.contains("submenu")
+    ) {
+      setShowSubmenu(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("click", handleWindowClick);
+
+    return () => {
+      window.removeEventListener("click", handleWindowClick);
+    };
+  }, []);
 
   return (
     <header className="header">
@@ -43,10 +61,11 @@ export const NavBar = () => {
               Nosotros
             </NavLink>
             <button
+              onClick={handleSubmenu}
+              ref={buttonRef}
               className={`header__nav--menu__ul--li productos ${
                 showSubmenu ? "active" : ""
               }`}
-              onClick={handleSubmenu}
             >
               Productos
               {showSubmenu && <Categorias />}
